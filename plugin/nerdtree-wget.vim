@@ -19,14 +19,14 @@ function! NERDTreeWGeter()
                         \ "==========================================================\n" .
                         \ "Enter the url of the file to wget:                        \n" .
                         \ "")
-    Bundle 'EvanDotPro/nerdtree-symlink'
+
     if wgetURL ==# ''
         echo "Cannot fetch an empty url."
         return
     endif
 
     try
-        let cmd = 'wget ' . shellescape(wgetURL) . ' ' . curDir.path.str({'format': 'Cd'}) . '/'
+        let cmd = 'wget ' . shellescape(wgetURL) . ' -P ' . curDir.path.str({'format': 'Cd'}) . '/'
 
         if cmd != ''
             let success = system(cmd)
