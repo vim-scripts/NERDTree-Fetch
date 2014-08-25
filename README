@@ -1,7 +1,7 @@
 This is a mirror of http://www.vim.org/scripts/script.php?script_id=4836
 
-This is a simple plugin for NERDTree to allow a file to be pulled from the internet using wget.
+This is a simple plugin for NERDTree to allow a file to be pulled from the internet using wget or curl.
 
-Github: https://github.com/markgandolfo/nerdtree-wget.vim
+Github: https://github.com/markgandolfo/nerdtree-fetch.vim
 
-To use place the cursor over the directory you wish to pull the file into, and open the file menu in NERDTree using , then press . You will get an input asking you to enter the url of the file. Fill in the the url and press enter.
+To use place the cursor over the directory you wish to pull the file into, and open the file menu in NERDTree using (m), then press (f) . You will get an input asking you to enter the url of the file. Fill in the the url and press enter.
